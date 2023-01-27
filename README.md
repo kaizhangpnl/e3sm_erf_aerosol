@@ -23,7 +23,7 @@ Demo figures can be found at : https://github.com/kaizhangpnl/e3sm_erf_aerosol/t
 
 ### Summary figure  
 
-The following figure shows the global distributions of decomposed net (left column), shortwave (middle column), and longwave (right column) effective aerosol forcing (∆F) at the top of model (TOM). The forcing is calculated based on a pair of nudged simulations with PD and PI aerosol/precursor emissions. 
+The following figure shows the global distributions of decomposed net (left column), shortwave (middle column), and longwave (right column) effective aerosol forcing (∆F) at the top of model (TOM). The forcing is calculated based on a pair of [nudged simulations](https://github.com/kaizhangpnl/nudging_e3sm) with PD and PI aerosol/precursor emissions. 
 
 ALL indicates the total ∆F calculated from the difference between CTRL and E1850 (ALL=ARI+ACI+RES). ACI indicates the ∆F caused by aerosol-cloud interactions (2nd row), ARI the ∆F caused by aerosol-radiation interactions (3rd row), and RES (bottom row) the residual forcing. The clear-sky direct aerosol effect (4th row) is also shown. See [Zhang et al. (2022)](https://acp.copernicus.org/articles/22/9129/2022/) for details. 
 
