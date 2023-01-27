@@ -1,4 +1,4 @@
-# Effective Aerosol Forcing Diagnostics for E3SM 
+# Effective Aerosol Forcing (ERFaer) Diagnostics for E3SM 
 
 ## Overview   
 
@@ -7,9 +7,9 @@ Scripts in this repository can be used to calculate/decompose the effective radi
 
 The decomposed forcing fields will be plotted in a multi-panel figure: 
 
-1. Total effective aerosol forcing 
-3. Effective aerosol forcing due to aerosol-cloud interactions (ACI). This term includes indirect aerosol effect and semi-direct aerosol effect. 
-2. Effective aerosol forcing due to aerosol-cloud interactions (ARI). This is often called direct effect. 
+1. Total ERFaer 
+3. ERFaer due to aerosol-cloud interactions (ACI). This term includes indirect aerosol effect and semi-direct aerosol effect. 
+2. ERFaer due to aerosol-cloud interactions (ARI). This is often called direct effect. 
 4. Clear-sky ARI 
 5. Residual aerosol forcing (RES, including surface albedo effect, impact of water vapor, and Planck feedback) 
 
