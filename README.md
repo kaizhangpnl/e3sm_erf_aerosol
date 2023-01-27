@@ -102,6 +102,15 @@ The following namelist control needs to be added to user_nl_eam
  srf_emis_type          = 'CYCLICAL'
 ```
 
+## Reference 
+
+1. Ghan, S. J.: Technical Note: Estimating aerosol effects on cloud radiative forcing, 
+Atmos. Chem. Phys., 13, 9971–9974, https://doi.org/10.5194/acp-13-9971-2013, 2013. 
+
+2. Zhang, K. et al. Effective radiative forcing of anthropogenic aerosols in E3SM version 1: 
+historical changes, causality, decomposition, and parameterization sensitivities, 
+Atmos. Chem. Phys., 22, 9129–9160, https://doi.org/10.5194/acp-22-9129-2022, 2022.
+
 ## Contact
 
 Kai Zhang (kai.zhang@pnnl.gov) 
