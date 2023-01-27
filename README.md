@@ -8,16 +8,22 @@ Scripts in this repository can be used to calculate/decompose the effective radi
 3. Effective aerosol forcing due to aerosol-cloud interactions (ACI). This term includes indirect aerosol effect and semi-direct aerosol effect. 
 2. Effective aerosol forcing due to aerosol-cloud interactions (ARI). This is often called direct effect. 
 4. Clear-sky ARI 
-5. Residual aerosol forcing (including surface albedo effect, impact of water vapor, and Planck feedback) 
+5. Residual aerosol forcing (RES, including surface albedo effect, impact of water vapor, and Planck feedback) 
 
-Note: The following setup works only for E3SMv1 and E3SMv2. 
+More details can be found in 
+[Zhang et al. (2022)]([https://www.atmos-chem-phys.net/11/7817/2011/](https://acp.copernicus.org/articles/22/9129/2022/))
 
+
+## Example 
+
+Geographical distributions of decomposed net (left column), shortwave (middle column), and longwave (right column) ∆F at the top of model (TOM). The decomposition calculation follows Ghan (2013). ALL indicates the total ∆F calculated from the difference between CTRL and E1850 (ALL=ARI+ACI+RES). ACI indicates the ∆F caused by aerosol-cloud interactions (2nd row), ARI the ∆F caused by aerosol-radiation interactions (3rd row), and RES (bottom row) the residual forcing. The clear-sky direct aerosol effect (4th row) is also shown. See [Zhang et al. (2022)]([https://www.atmos-chem-phys.net/11/7817/2011/](https://acp.copernicus.org/articles/22/9129/2022/)) for details. 
+
+<img src="https://github.com/kaizhangpnl/e3sm_erf_aerosol/blob/main/demo/ERFaer_TOM_E3SMv1.png" width="500" class="inline" />
 
 
 ## Simulation configuration    
 
-The following namelist control needs to be added to user_nl_eam 
-
+The following setup works only for E3SMv1 and E3SMv2. The namelist control needs to be added to user_nl_eam.  
 
 ## A double call to radiation  
 
