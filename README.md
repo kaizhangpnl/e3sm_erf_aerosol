@@ -24,6 +24,9 @@ The following figure shows the global distributions of decomposed net (left colu
 <img src="https://github.com/kaizhangpnl/e3sm_erf_aerosol/blob/main/demo/ERFaer_TOM_E3SMv1.png" width="600" class="inline" />
 
 
+<img src="https://github.com/kaizhangpnl/e3sm_erf_aerosol/blob/main/demo/ERFaer_TOM_E3SMv1_table.png" width="600" class="inline" />
+
+
 ## Simulation configuration    
 
 The following setup works only for E3SMv1 and E3SMv2. The namelist control needs to be added to user_nl_eam.  
