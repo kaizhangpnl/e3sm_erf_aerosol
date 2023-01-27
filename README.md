@@ -9,7 +9,7 @@ The decomposed forcing fields will be plotted in a multi-row figure with the net
 
 1. Total ERFaer 
 3. ERFaer due to aerosol-cloud interactions (ACI). This term includes indirect aerosol effect and semi-direct aerosol effect. 
-2. ERFaer due to aerosol-cloud interactions (ARI). This is also often called direct aerosol effect. 
+2. ERFaer due to aerosol-radiation interactions (ARI). This is also often called direct aerosol effect. 
 4. Clear-sky ARI 
 5. Residual aerosol forcing (RES, including surface albedo effect, impact of water vapor, and Planck feedback) 
 
@@ -55,15 +55,17 @@ The namelist control needs to be added to user_nl_eam.
 
 ### Aerosol budget/optics diagnostics 
 
+This is not for the forcing calculation, but would be useful for additional aerosol budget and optical property analysis. 
+
 ```
  !!..................................................................
  !! for aerosol budget diagnostics, set the following the true 
  !!..................................................................
 
- history_amwg           = .true.
- history_aerosol        = .true.
- history_aero_optics    = .true.
- history_verbose        = .true.
+ history_amwg           = .true.   !! default 
+ history_aerosol        = .true.   !! for detailed mass budget analysis 
+ history_aero_optics    = .true.   !! for detailed aerosol optical property analysis 
+ history_verbose        = .true.   !! for detailed mass budget analysis 
 
 ```
 
