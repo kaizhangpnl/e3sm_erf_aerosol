@@ -33,7 +33,9 @@ ALL indicates the total ∆F calculated from the difference between CTRL and E18
 
 ## Simulation configuration    
 
-The following setup works only for E3SMv1 and E3SMv2. The namelist control needs to be added to user_nl_eam.  
+The following setup works only for E3SMv1 and E3SMv2, with updated MAM4 aerosol module ([Zhang et al. (2022)](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019MS001851)). 
+
+The namelist control needs to be added to user_nl_eam.  
 
 ## A double call to radiation  
 
@@ -131,8 +133,8 @@ The following setup works only for E3SMv1 and E3SMv2. The namelist control needs
 
 1. Ghan, S. J.: Technical Note: Estimating aerosol effects on cloud radiative forcing, 
 Atmos. Chem. Phys., 13, 9971–9974, https://doi.org/10.5194/acp-13-9971-2013, 2013. 
-
-2. Zhang, K. et al. Effective radiative forcing of anthropogenic aerosols in E3SM version 1: 
+2. Wang, H., Easter, R. C., Zhang, R., Ma, P.-L., Singh, B., Zhang, K., et al. (2020). Aerosols in the E3SM Version 1: New developments and their impacts on radiative forcing. Journal of Advances in Modeling Earth Systems, 12, e2019MS001851. https://doi.org/10.1029/2019MS001851
+3. Zhang, K. et al. Effective radiative forcing of anthropogenic aerosols in E3SM version 1: 
 historical changes, causality, decomposition, and parameterization sensitivities, 
 Atmos. Chem. Phys., 22, 9129–9160, https://doi.org/10.5194/acp-22-9129-2022, 2022.
 
