@@ -65,7 +65,7 @@ This is not for the forcing calculation, but would be useful for additional aero
  history_amwg           = .true.   !! default 
  history_aerosol        = .true.   !! for detailed mass budget analysis 
  history_aero_optics    = .true.   !! for detailed aerosol optical property analysis 
- history_verbose        = .true.   !! for detailed mass budget analysis 
+ history_verbose        = .true.   !! for detailed mass budget analysis (mass for individual modes) 
 
 ```
 
