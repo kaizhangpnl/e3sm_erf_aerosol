@@ -5,7 +5,7 @@
 Scripts in this repository can be used to calculate/decompose the effective radiative forcing of anthropogenic aerosols (ERFaer). The method follows 
 [Ghan et al. (2013)](https://acp.copernicus.org/articles/13/9971/2013/). 
 
-The decomposed forcing fields will be plotted in a multi-panel figure: 
+The decomposed forcing fields will be plotted in a multi-row figure with the net, shortwave (SW), and longwave (LW) forcing: 
 
 1. Total ERFaer 
 3. ERFaer due to aerosol-cloud interactions (ACI). This term includes indirect aerosol effect and semi-direct aerosol effect. 
