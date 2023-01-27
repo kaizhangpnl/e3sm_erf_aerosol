@@ -9,7 +9,7 @@ The decomposed forcing fields will be plotted in a multi-row figure with the net
 
 1. Total ERFaer 
 3. ERFaer due to aerosol-cloud interactions (ACI). This term includes indirect aerosol effect and semi-direct aerosol effect. 
-2. ERFaer due to aerosol-cloud interactions (ARI). This is often called direct effect. 
+2. ERFaer due to aerosol-cloud interactions (ARI). This is also often called direct aerosol effect. 
 4. Clear-sky ARI 
 5. Residual aerosol forcing (RES, including surface albedo effect, impact of water vapor, and Planck feedback) 
 
