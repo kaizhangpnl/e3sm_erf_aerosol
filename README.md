@@ -31,7 +31,7 @@ ALL indicates the total ∆F calculated from the difference between CTRL and E18
 
 ### Summary table  
 
-The following table shows the global and regional mean effective aerosol forcing at the top of model and at the surface. 
+The [following table](https://github.com/kaizhangpnl/e3sm_erf_aerosol/blob/main/demo/E3SMv1_nudged_pdpi/table_erf_aer) shows the global and regional mean effective aerosol forcing at the top of model and at the surface. 
 
 <img src="https://github.com/kaizhangpnl/e3sm_erf_aerosol/blob/main/demo/ERFaer_TOM_E3SMv1_table.png" width="600" class="inline" />
 
