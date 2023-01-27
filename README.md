@@ -42,7 +42,7 @@ The following setup works only for E3SMv1 and E3SMv2, with the updated MAM4 aero
 
 The namelist control needs to be added to user_nl_eam.  
 
-## A double call to radiation  
+### A double call to radiation  
 
 ```
  !!..................................................................
@@ -54,7 +54,7 @@ The namelist control needs to be added to user_nl_eam.
  rad_diag_1 = 'A:Q:H2O', 'N:O2:O2', 'N:CO2:CO2', 'A:O3:O3', 'N:N2O:N2O', 'N:CH4:CH4', 'N:CFC11:CFC11', 'N:CFC12:CFC12'
 ```
 
-## Aerosol budget/optics diagnostics 
+### Aerosol budget/optics diagnostics 
 
 ```
  !!..................................................................
@@ -69,7 +69,7 @@ The namelist control needs to be added to user_nl_eam.
 ```
 
 
-## Emission (PD) 
+### Emission (PD) 
 
 ```
  !!..................................................................
@@ -101,7 +101,7 @@ The namelist control needs to be added to user_nl_eam.
 ```
 
 
-## Emission (PI) 
+### Emission (PI) 
 
 ```
  !!..................................................................
