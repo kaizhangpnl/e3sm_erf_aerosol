@@ -38,7 +38,7 @@ The following table shows the global and regional mean effective aerosol forcing
 
 ## Simulation configuration    
 
-The following setup works only for E3SMv1 and E3SMv2, with updated MAM4 aerosol module ([Wang et al. (2020)](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019MS001851)). 
+The following setup works only for E3SMv1 and E3SMv2, with the updated MAM4 aerosol module ([Wang et al. (2020)](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019MS001851)). 
 
 The namelist control needs to be added to user_nl_eam.  
 
