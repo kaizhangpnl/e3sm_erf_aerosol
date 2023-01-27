@@ -3,7 +3,9 @@
 Description on the aerosol forcing simulation configuratoin and analysis 
 
 Kai Zhang (kai.zhang@pnnl.gov) 
-2020-  
+
+
+Note: The following setup works only for E3SMv1 and E3SMv2. 
 
 
 The following namelist control needs to be added to user_nl_eam 
