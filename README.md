@@ -16,7 +16,6 @@ The decomposed forcing fields will be plotted in a multi-row figure with the net
 More details can be found in 
 [Zhang et al. (2022)](https://acp.copernicus.org/articles/22/9129/2022/). 
 
-
 ## Example 
 
 Demo figures can be found at : https://github.com/kaizhangpnl/e3sm_erf_aerosol/tree/main/demo/E3SMv1_nudged_pdpi 
@@ -134,7 +133,7 @@ The namelist control needs to be added to user_nl_eam.
  srf_emis_type          = 'CYCLICAL'
 ```
 
-## main script 
+## Main script 
 
 The main script is [diag_aer_forcing.csh](https://github.com/kaizhangpnl/e3sm_erf_aerosol/blob/main/script/diag_aer_forcing.csh), which will use NCO and CDO to extract/merge/average the data and call the following NCL scripts to calculate/decompse the forcing: 
 
@@ -144,6 +143,12 @@ The main script is [diag_aer_forcing.csh](https://github.com/kaizhangpnl/e3sm_er
 4. plot_erf_aer_ann_mean_all_surf.ncl (plot surface (SUR) forcing) 
 5. plot_erf_aer_seas_mean.ncl (plot seasonal mean TOM forcing)  
 
+
+## Requirement 
+
+1. NCO (https://nco.sourceforge.net/) 
+2. CDO (https://code.mpimet.mpg.de/projects/cdo/) 
+3. NCL (https://www.ncl.ucar.edu/) 
 
 ## Reference 
 
