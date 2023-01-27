@@ -134,6 +134,17 @@ The namelist control needs to be added to user_nl_eam.
  srf_emis_type          = 'CYCLICAL'
 ```
 
+## main script 
+
+The main script is [diag_aer_forcing.csh](https://github.com/kaizhangpnl/e3sm_erf_aerosol/blob/main/script/diag_aer_forcing.csh), which will use NCO and CDO to extract/merge/average the data and call the following NCL scripts: 
+
+1. cal_erf_aer_time_mean_all.ncl      : calculate/decompose forcing 
+2. make_table_erf_aer_ann_mean.ncl    : create a summary table 
+3. plot_erf_aer_ann_mean_all.ncl      : plot top-of-model (TOM) forcing    
+4. plot_erf_aer_ann_mean_all_surf.ncl : plot surface (SUR) forcing  
+5. plot_erf_aer_seas_mean.ncl         : plot seasonal mean TOM forcing   
+
+
 ## Reference 
 
 1. Ghan, S. J.: Technical Note: Estimating aerosol effects on cloud radiative forcing, 
