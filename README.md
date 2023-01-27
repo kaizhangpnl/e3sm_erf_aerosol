@@ -37,7 +37,7 @@ The following setup works only for E3SMv1 and E3SMv2. The namelist control needs
  !! this will activate a second call to radiation without aerosols 
  !!..................................................................
 
- rad_diag_1             = 'A:Q:H2O', 'N:O2:O2', 'N:CO2:CO2', 'A:O3:O3', 'N:N2O:N2O', 'N:CH4:CH4', 'N:CFC11:CFC11', 'N:CFC12:CFC12'
+ rad_diag_1 = 'A:Q:H2O', 'N:O2:O2', 'N:CO2:CO2', 'A:O3:O3', 'N:N2O:N2O', 'N:CH4:CH4', 'N:CFC11:CFC11', 'N:CFC12:CFC12'
 ```
 
 ## Aerosol budget/optics diagnostics 
