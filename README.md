@@ -1,13 +1,16 @@
-# e3sm_erf_aerosol
-Effective aerosol forcing diagnostics for E3SM
+# Effective aerosol forcing diagnostics for E3SM 
 
-
-## Description on the aerosol forcing simulation configuratoin and analysis 
-
+## Overview   
 
 Note: The following setup works only for E3SMv1 and E3SMv2. 
 
+
+## Simulation configuration    
+
 The following namelist control needs to be added to user_nl_eam 
+
+
+## A double call to radiation  
 
 ```
  !!..................................................................
@@ -17,7 +20,11 @@ The following namelist control needs to be added to user_nl_eam
  !!..................................................................
 
  rad_diag_1             = 'A:Q:H2O', 'N:O2:O2', 'N:CO2:CO2', 'A:O3:O3', 'N:N2O:N2O', 'N:CH4:CH4', 'N:CFC11:CFC11', 'N:CFC12:CFC12'
+```
 
+## Aerosol budget/optics diagnostics 
+
+```
  !!..................................................................
  !! for aerosol budget diagnostics, set the following the true 
  !!..................................................................
@@ -28,6 +35,9 @@ The following namelist control needs to be added to user_nl_eam
  history_verbose        = .true.
 
 ```
+
+
+## Emission (PD) 
 
 ```
  !!..................................................................
@@ -57,6 +67,9 @@ The following namelist control needs to be added to user_nl_eam
          'so4_a2    -> /compyfs/inputdata/atm/cam/chem/trop_mozart_aero/emis/DECK_ne30/cmip6_mam4_so4_a2_surf_1850-2014_c180205.nc'
  srf_emis_type          = 'CYCLICAL'
 ```
+
+
+## Emission (PI) 
 
 ```
  !!..................................................................
