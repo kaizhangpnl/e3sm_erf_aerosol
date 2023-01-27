@@ -2,7 +2,10 @@
 
 ## Overview   
 
-Scripts in this repository can be used to calculate/decompose the effective radiative forcing of anthropogenic aerosols: 
+Scripts in this repository can be used to calculate/decompose the effective radiative forcing of anthropogenic aerosols. The method follows 
+[Ghan et al. (2013)]([[https://www.atmos-chem-phys.net/11/7817/2011/](https://acp.copernicus.org/articles/22/9129/2022/](https://acp.copernicus.org/articles/13/9971/2013/)))
+
+The decomposed forcing fields will be plotted in a multi-panel figure: 
 
 1. Total effective aerosol forcing 
 3. Effective aerosol forcing due to aerosol-cloud interactions (ACI). This term includes indirect aerosol effect and semi-direct aerosol effect. 
@@ -16,9 +19,9 @@ More details can be found in
 
 ## Example 
 
-Geographical distributions of decomposed net (left column), shortwave (middle column), and longwave (right column) ∆F at the top of model (TOM). The decomposition calculation follows Ghan (2013). ALL indicates the total ∆F calculated from the difference between CTRL and E1850 (ALL=ARI+ACI+RES). ACI indicates the ∆F caused by aerosol-cloud interactions (2nd row), ARI the ∆F caused by aerosol-radiation interactions (3rd row), and RES (bottom row) the residual forcing. The clear-sky direct aerosol effect (4th row) is also shown. See [Zhang et al. (2022)]([https://www.atmos-chem-phys.net/11/7817/2011/](https://acp.copernicus.org/articles/22/9129/2022/)) for details. 
+The following figure shows the global distributions of decomposed net (left column), shortwave (middle column), and longwave (right column) effective aerosol forcing (∆F) at the top of model (TOM). ALL indicates the total ∆F calculated from the difference between CTRL and E1850 (ALL=ARI+ACI+RES). ACI indicates the ∆F caused by aerosol-cloud interactions (2nd row), ARI the ∆F caused by aerosol-radiation interactions (3rd row), and RES (bottom row) the residual forcing. The clear-sky direct aerosol effect (4th row) is also shown. See [Zhang et al. (2022)]([https://www.atmos-chem-phys.net/11/7817/2011/](https://acp.copernicus.org/articles/22/9129/2022/)) for details. 
 
-<img src="https://github.com/kaizhangpnl/e3sm_erf_aerosol/blob/main/demo/ERFaer_TOM_E3SMv1.png" width="500" class="inline" />
+<img src="https://github.com/kaizhangpnl/e3sm_erf_aerosol/blob/main/demo/ERFaer_TOM_E3SMv1.png" width="600" class="inline" />
 
 
 ## Simulation configuration    
