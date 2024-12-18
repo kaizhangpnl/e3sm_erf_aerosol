@@ -32,7 +32,7 @@ begin
   MYCASE = getenv("mycase") 
   MYPATH = getenv("mypath") 
  
-  file1 = MYPATH + "/" + "AIE_" + MYCASE + "_PD-PI_" + avg_period + ".nc"
+  file1 = MYPATH + "/" + "PP_" + MYCASE + "_" + avg_period + ".nc"
 
   vars = (/"TTAEF", "SWAEF", "LWAEF", \
 	   "TTIND", "SWIND", "LWIND", \
