@@ -29,7 +29,7 @@ begin
 
   timestr = MYTIME
 
-  MYFILE  = "AIE_" + MYCASE + "_PD-PI_" + timestr
+  MYFILE  = "PP_" + MYCASE + "_" + timestr
 
   fna = INPUTA 
   fnb = INPUTB 
