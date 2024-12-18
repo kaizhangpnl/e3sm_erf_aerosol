@@ -18,9 +18,9 @@ begin
   ;; input data
   ;;...........................................................
 
-  fna = MYPATH + "/" + "AIE_" + MYCASE + "_PD-PI_" + avg_period + ".nc"
+  fna = MYPATH + "/" + "PP_" + MYCASE + "_" + avg_period + ".nc"
 
-  casename = "AIE_" + MYCASE + "_PD-PI_" + avg_period 
+  casename = MYCASE + "_" + avg_period 
 
   if (.not. isfilepresent(fna)) then
       print("No such file: "+fna)
