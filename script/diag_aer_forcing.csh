@@ -94,7 +94,10 @@ if($create_data_radflux == "T") then
       rm -f $O3 
       rm -f $O4
  
-      setenv vlist "AODVIS,FSNT,FLNT,FSNTC,FLNTC,FSNT_d1,FLNT_d1,FSNTC_d1,FLNTC_d1,FSNS,FLNS,FSNSC,FLNSC,FSNS_d1,FLNS_d1,FSNSC_d1,FLNSC_d1" 
+      setenv vlist1 "AODVIS,FSNT,FLNT,FSNTC,FLNTC,FSNT_d1,FLNT_d1,FSNTC_d1,FLNTC_d1,FSNS,FLNS,FSNSC,FLNSC,FSNS_d1,FLNS_d1,FSNSC_d1,FLNSC_d1" 
+      setenv vlist2 "ccn.1bl,ccn.3bl,cdnc,cdnum,cdr,cod,colrv,lcc,icc,icnc,icnum,icr,rwp,lwp,iwp,TH7001000"
+
+      setenv vlist ${vlist1},${vlist2}
 
       ncks -v $vlist $F1 $O3 >& err1_ncks_${mm} & 
       ncks -v $vlist $F2 $O4 >& err2_ncks_${mm} & 
