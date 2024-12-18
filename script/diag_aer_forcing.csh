@@ -27,10 +27,10 @@
 ###################################
 ## set case name
 ###################################
-setenv C1 run.F2010.pi.compy
-setenv C2 run.F2010.pd.compy
- 
-setenv mycase "F2010_pdpi" 
+setenv C1 v2_ndg_nc00_pi
+setenv C2 v2_ndg_nc00_pd
+
+setenv mycase diag_${C2}_${C1}
 
 ###################################
 ## set path
