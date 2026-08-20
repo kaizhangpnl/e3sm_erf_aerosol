@@ -1,10 +1,12 @@
-## Simulation configuration for E3SMv3
+## Simulation Configuration for E3SMv3
 
-The following setup works for E3SMv3, with the updated MAM5 aerosol module. 
+The following setup is intended for E3SMv3 simulations using the updated MAM5 aerosol module.
 
-The namelist control needs to be added to user_nl_eam.  
+Add the relevant namelist settings to `user_nl_eam`. The present-day (PD) and preindustrial (PI) emission configurations are alternatives for separate simulations.
 
-### A double call to radiation  
+### Second Radiation Call for Aerosol-Forcing Decomposition
+
+The `rad_diag_1` setting below activates a second radiation call without aerosols. This configuration is useful for diagnosing and decomposing aerosol radiative forcing.
 
 ```
  !!..................................................................
@@ -19,9 +21,9 @@ The namelist control needs to be added to user_nl_eam.
          'N:CFC11:CFC11', 'N:CFC12:CFC12'
 ```
 
-### Aerosol budget/optics diagnostics 
+### Aerosol Budget and Optical Diagnostics
 
-This is not for the forcing calculation, but would be useful for additional aerosol budget and optical property analysis. 
+These settings are not required for the forcing calculation. Enable them when additional aerosol mass-budget or optical-property diagnostics are needed.
 
 ```
  !!..................................................................
@@ -35,7 +37,11 @@ This is not for the forcing calculation, but would be useful for additional aero
 
 ```
 
-### Emission (PD) 
+### Present-Day Emissions (PD, 2010)
+
+Use the following configuration for the present-day simulation, with emissions representative of 2010. This is the first simulation in the comparison.
+
+The block includes elevated emissions, surface emissions, and prescribed oxidant fields.
 
 ```
  !!..................................................................
@@ -95,7 +101,13 @@ This is not for the forcing calculation, but would be useful for additional aero
  tracer_cnst_type               = 'CYCLICAL'
 ```
 
-### Emission (PI) 
+### Preindustrial Emissions (PI, 1850)
+
+Use the following configuration for the preindustrial simulation, with emissions representative of 1850. This is the second simulation in the comparison.
+
+When switching from the PD to the PI configuration, change both `ext_frc_cycle_yr` and `srf_emis_cycle_yr` to `1850`.
+
+The block includes elevated emissions, surface emissions, and prescribed oxidant fields.
 
 ```
  !!..................................................................
@@ -156,4 +168,3 @@ This is not for the forcing calculation, but would be useful for additional aero
  tracer_cnst_specifier          = 'prsd_O3:O3','prsd_NO3:NO3','prsd_OH:OH'
  tracer_cnst_type               = 'CYCLICAL'
 ```
-
